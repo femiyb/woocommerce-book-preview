@@ -1,0 +1,583 @@
+
+/*--------------------------- 
+Add Plugin Front-End CSS here 
+---------------------------*/
+
+/* wbps_preview_overlay Styles */
+.wbps_preview_overlay {
+    background:rgba(0,0,0,0.8);
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    position:fixed;
+    width: 100%;
+    height: 100%; 
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:9999999999;
+    }
+ 
+.wbps_stop{
+position: fixed ;
+left: 0 ;
+right: 0 ;
+overflow: auto;
+    }
+    /* Scroll bar Works on Firefox */
+    .wbps_preview_popup {
+    scrollbar-width: 0;
+    scrollbar-color: grey;
+    }
+    
+    /* Scroll bar Works on Chrome, Edge, and Safari */
+    .wbps_preview_popup::-webkit-scrollbar {
+    width: 5px;
+    }
+    
+    .wbps_preview_popup::-webkit-scrollbar-track {
+    background: white;
+    }
+    
+    .wbps_preview_popup::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 60px;
+}
+    
+    /* wbps_preview_popup */
+
+@media only screen and (min-width: 769px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+/*---------------------
+Working with the Close button and Small popup Box
+--------------------*/
+    
+        #wbps_small_preview_inner > div > div.colleft > div.col1 > span > div{
+            float: left;
+        }
+        #wbps_small_preview_inner > div > div.colleft > div.col1 > p{
+            margin-bottom: 0;
+        }
+    #wbps_overlay_close{
+            position:fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            z-index:99999999999999;
+            width:100%; /*Change your width here*/
+            height:40px; /*Change your height here*/
+            }
+    #wbps_close_button_position{
+        height: 40px;
+        float: right;
+        opacity: 100%;
+        margin-top: auto;
+        border: 0;
+        box-shadow: 0;
+        font-family: 'Poppins', sans-serif;
+        padding: 2px;
+    }
+    #wbps_close_sticky_position,#wbps_simple_add_to_cart{
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        background-color:antiquewhite; 
+        color:black; 
+        border-top:2px solid black;
+        border-bottom:2px solid black;
+        border-left: 0;
+        border-right: 0;
+    }
+/*--------------------------- 
+Responsive CSS here 
+---------------------------*/
+/*
+Medium/Large Screens 
+*/
+
+#wbps_small_preview_inner > div.wbps_mask > div > div.wbps_col1 > p.wbps_preview_author_settings{
+    margin-bottom: 0;
+}
+.wbps_small_preview_inner{
+    background:white;
+    position:fixed;
+    top: 50px;
+    left:60%;
+    right:0;
+    z-index:999999999999;
+    width:300px; /*Change your width here*/
+    height:auto; /*Change your height here*/
+    margin:auto;
+    border-radius: 5px 5px 2px 2px;
+    padding: 5px 0 0 0; 
+    }
+    .wbps_col1{
+        position: relative;
+        overflow: hidden;
+        float: left;
+        width: 198px;
+        left: 328px;
+        font-family: 'Poppins', sans-serif;
+     }
+     .wbps_col2{
+        position: relative;
+        overflow: hidden;
+        float: left;
+        width: 70px;
+        height: auto;
+        left: 40.5px;
+     }
+     .wbps_preview_popup{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:20%;
+        z-index:99999999999;
+        width:700px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: none;
+        }
+.wbps_preview_popup-inner{
+    width:500px;
+    right:0;
+    left:15%;
+}
+
+.wbps_wide_preview_inner{
+    background:white;
+    position:fixed;
+    top:40px;
+    left:0;
+    bottom:0;
+    right:20%;
+    z-index:99999999999;
+    width:710px; /*Change your width here*/
+    height:auto; /*Change your height here*/
+    margin:auto;
+    padding: 0 5px 0 5px;
+    border-radius: 3px 3px 0px 0px; 
+    border: 2px solid transparent;
+    }
+    .wbps_bottom_preview_inner{
+        display: none;
+    }
+@media only screen and (max-width: 1430px) {
+    .wbps_small_preview_inner{
+        background:white;
+        position:fixed;
+        top: 50px;
+        left:60%;
+        right:0;
+        z-index:999999999999;
+        width:300px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        border-radius: 5px 5px 2px 2px;
+        padding: 5px 0 0 0; 
+        }
+        .wbps_col1{
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 198px;
+            left: 328px;
+            font-family: 'Poppins', sans-serif;
+         }
+         .wbps_col2{
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 70px;
+            height: auto;
+            left: 40.5px;
+         }
+         .wbps_preview_popup{
+            background:white;
+            position:fixed;
+            top:40px;
+            left:0;
+            bottom:0;
+            right:20%;
+            z-index:99999999999;
+            width:700px; /*Change your width here*/
+            height:auto; /*Change your height here*/
+            margin:auto;
+            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: none;
+            }
+    .wbps_preview_popup-inner{
+        width:500px;
+        right:0;
+        left:15%;
+    }
+    
+    .wbps_wide_preview_inner{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:20%;
+        z-index:99999999999;
+        width:710px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        padding: 0 5px 0 5px;
+        border-radius: 3px 3px 0px 0px; 
+        border: 2px solid transparent;
+        }
+        .wbps_bottom_preview_inner{
+            display: none;
+        }
+}
+/*
+Medium Screens 
+*/
+@media only screen and (max-width: 1280px) {
+    .wbps_small_preview_inner{
+        background:white;
+        position:fixed;
+        top: 50px;
+        left:70%;
+        right:0;
+        z-index:999999999999;
+        width:300px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        border-radius: 5px 5px 2px 2px;
+        padding: 5px 0 0 0; 
+        }
+        .wbps_bottom_preview_inner{
+            display: none;
+        }
+}
+/*
+Large Tablet Screens 
+*/
+@media only screen and (max-width: 1140px) {
+    .wbps_small_preview_inner{
+        background:white;
+        position:fixed;
+        top: 50px;
+        left:72%;
+        right:0;
+        z-index:999999999999;
+        width:250px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        border-radius: 5px 5px 2px 2px;
+        padding: 5px 0 0 0; 
+        }
+        .wbps_col1{
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 178px;
+            left: 308px;
+            font-family: 'Poppins', sans-serif;
+         }
+         .wbps_col2{
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 50px;
+            height: auto;
+            left: 65.5px;
+         }
+         .wbps_preview_popup{
+            background:white;
+            position:fixed;
+            top:40px;
+            left:0;
+            bottom:0;
+            right:30%;
+            z-index:99999999999;
+            width:700px; /*Change your width here*/
+            height:auto; /*Change your height here*/
+            margin:auto;
+            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: none;
+            }
+    .wbps_preview_popup-inner{
+        width:500px;
+        right:0;
+        left:15%;
+    }
+    
+    .wbps_wide_preview_inner{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:30%;
+        z-index:99999999999;
+        width:710px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        padding: 0 5px 0 5px;
+        border-radius: 3px 3px 0px 0px; 
+        border: 2px solid transparent;
+        }
+        .wbps_bottom_preview_inner{
+            display: none;
+        }
+}
+@media only screen and (max-width: 980px) {
+    .wbps_wide_preview_inner{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index:99999999999;
+        width:710px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        padding: 0 5px 0 5px;
+        border-radius: 3px 3px 0px 0px; 
+        border: 2px solid transparent;
+        }
+        .wbps_preview_popup{
+            background:white;
+            position:fixed;
+            top:40px;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index:99999999999;
+            width:700px; /*Change your width here*/
+            height:auto; /*Change your height here*/
+            margin:auto;
+            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: none;
+            }
+    .wbps_preview_popup-inner{
+        width:500px;
+        right:0;
+        left:15%;
+        top: 0;
+        bottom: 0;
+    }
+    .wbps_small_preview_inner{
+    display: none; 
+        }
+    .wbps_bottom_preview_inner{
+        background:white;
+        position:relative;
+        display: block;
+        left:0;
+        right:0;
+        bottom: 0;
+        z-index:999999999999;
+        width:300px; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        border-radius: 5px 5px 2px 2px;
+        padding: 5px 0 0 0;
+    }
+}
+/*
+Medium Tablet Screens 
+*/
+@media only screen and (max-width: 768px) {
+    .wbps_wide_preview_inner{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index:99999999999;
+        width:100%; /*Change your width here*/
+        height:auto; /*Change your height here*/
+        margin:auto;
+        padding: 0 5px 0 5px;
+        border-radius: 3px 3px 0px 0px; 
+        border: 2px solid transparent;
+        }
+    .wbps_preview_popup{
+        background:white;
+        position:fixed;
+        top:40px;
+        left:0;
+        bottom:0;
+        right:0;
+        z-index:99999999999;
+        height:auto; /*Change your height here*/
+        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: none;
+        width:90%;
+        margin:auto 5%;
+        }
+        .wbps_preview_popup-inner{
+            width:80%;
+            right:0;
+            left:15%;
+            top: 0;
+            bottom: 0;
+        }
+        .wbps_bottom_preview_inner{
+            background:white;
+            position:relative;
+            display: block;
+            left:0;
+            right:0;
+            bottom: 0;
+            z-index:999999999999;
+            width:100%; /*Change your width here*/
+            height:auto; /*Change your height here*/
+            margin:auto;
+            border-radius: 5px 5px 2px 2px;
+            padding: 5px 0 0 0;
+        }
+        .wbps_col1{
+            position: relative;
+            overflow: hidden;
+            float: none;
+            width: 0;
+            left: 0;
+            right: 0;
+            font-family: 'Poppins', sans-serif;
+         }
+         .wbps_col2{
+            position: relative;
+            overflow: hidden;
+            float: none;
+            width: 80px;
+            height: auto;
+            left: 0;
+            right: 0;
+         }
+}
+/*
+Small Tablet/Largest Phone Screens 
+*/
+@media only screen and (max-width: 600px) {
+
+}
+/*
+Large Phone Screens 
+*/
+@media only screen and (max-width: 420px) {
+
+}
+/*
+Medium Phone Screens 
+*/
+@media only screen and (max-width: 380px) {
+
+}
+/*
+Small Phone / Apple Watch Screens 
+*/
+@media only screen and (max-width: 320px) {
+
+}
+
+@media (max-width:768px){
+
+}
+  /* wbps_preview_popup Inner */
+.wbps_preview_popup-inner{
+    position:relative;
+    padding:1em;
+}
+
+.wbpsicon{
+    position: relative;
+    right: 35px;
+    pointer-events: none;
+}
+
+    input[type="button"].wbps_popup_btn{
+	margin-bottom: 10px;
+    padding: 10px 40px 10px 10px;
+    box-shadow: none;
+    z-index: 1;
+    cursor: pointer;
+}
+span > i#wbps_fa{
+    z-index: 1;
+}
+
+/* FOOTER PREVIEW STYLING */
+
+#wbps_pre_add_to_cart > .add_to_cart_inline {
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+#wbps_pre_add_to_cart > p > a{
+    padding: 5px;
+    width: 100%;
+}
+#wbps_pre_add_to_cart > p{
+    margin-bottom: 0;
+}
+#wbps_preview_popup_footer_text{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#wbps_sample_buy{
+    font-size: 22px;
+}
+
+
+/* Customize */
+.wbps_mask{
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    width: 287px;
+ }
+ .wbps_colleft{
+    position: relative;
+    width: 100%;
+    right: 234px;
+ }
+
+
+ #wbps_small_preview_inner > div.wbps_mask > div > div.wbps_col1 > span > div{
+     float: none;
+     margin: 0;
+ }
+ p.wbps_preview_title_settings{
+     margin-bottom: 0;
+     padding: 0 2px 0 0;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.4;
+     font-size: 16.5px;
+ }
+ #wbps_small_preview_inner > div.wbps_mask > div > div.wbps_col1 > p.wbps_preview_title_settings{
+     margin-bottom: 0;
+ }
+.wbps_preview_copyright{
+    font-size: 11px;
+    padding: 7px 5px 7px 5px;  
+    line-height: 1.3; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+#wbps_simple_add_to_cart{
+    width: 100%;
+    height: 45px;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
